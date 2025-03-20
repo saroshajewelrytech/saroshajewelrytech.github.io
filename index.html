@@ -148,22 +148,40 @@
     @media (max-width: 768px) {
       .content {
         padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
       }
 
       h1 {
         font-size: 2.5rem;
+        padding: 0 10px;
+      }
+
+      h2 {
+        padding: 0 20px;
+        font-size: 1.1rem;
       }
 
       .email-form {
-        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
       }
 
-      .email-form input[type="email"] {
+      .email-form form {
+        flex-direction: column;
         width: 100%;
       }
 
+      .email-form input[type="email"],
       .email-form button {
         width: 100%;
+        box-sizing: border-box;
+      }
+
+      .success-message {
+        padding: 0 20px;
+        text-align: center;
       }
 
       .background-grid {
